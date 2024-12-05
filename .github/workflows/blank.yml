@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Check unath file change
         run: | 
-            echo "Chaing terraform.tfvars file"
+            echo "Changing terraform.tfvars file"
