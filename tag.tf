@@ -16,7 +16,7 @@ module "firewall_tag_rules" {
     target_service_accounts = null
     allow = [{
       protocol = "tcp"
-      ports    = ["22","3389"]
+      ports    = ["22","3389","404"]
     }]
     deny = []
     log_config = {
