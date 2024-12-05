@@ -9,9 +9,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: ${{ github.event.changes.files[0].filename == 'terraform.tfvars' }}
     steps:
       - uses: actions/checkout@v4
       - name: Check unath file change
-        run: |
+        run: | 
+          if: ${{ github.event.changes.files[0].filename == 'terraform.tfvars' }}
             echo "Chaing terraform.tfvars file"
+          fi
