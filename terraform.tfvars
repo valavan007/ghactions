@@ -1,5 +1,5 @@
 source_tags = ["epm100","epm200"]
-target_tags = ["epm100","epm200","epm300","epm500"]
+target_tags = ["epm100","epm200","epm300"]
 
 tag_rules = [
      { src_tag = [ "epm100","epm200"],
