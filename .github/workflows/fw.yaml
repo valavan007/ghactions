@@ -1,4 +1,4 @@
-name: CI
+name: fw
 on:
   push:
     branches: [ "main" ]

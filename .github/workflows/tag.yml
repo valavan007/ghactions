@@ -1,4 +1,4 @@
-name: CI
+name: tag
 on:
   push:
     branches: [ "main" ]
@@ -7,7 +7,7 @@ on:
   pull_request:
     branches: [ "main" ]
     paths: 
-    - vars/terraform.tfvars
+      - vars/terraform.tfvars
 
 jobs:
   terraform:
