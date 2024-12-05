@@ -2,17 +2,13 @@ name: CI
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-  workflow_dispatch:
+    paths: 
+      - terraform.tfvars
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
       - name: Check unath file change
         run: | 
-          if [ $(github.event.changes.files[0].filename == 'terraform.tfvars') ]
             echo "Chaing terraform.tfvars file"
-          fi
