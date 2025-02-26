@@ -51,11 +51,11 @@ locals {
     instance_schedule = {
       create_config = {
       description     = "Temporary schedule"
-      timezone        = "UTC"
-      start_time      = "2025-02-27T10:00:00Z"
-      expiration_time = "2025-02-29T18:00:00Z"
-      vm_start        = "0 9 * * *"
-      vm_stop         = "0 17 * * *"
+      timezone        = "America/New_York"
+      start_time      = "2025-02-27T10:00:00Z" # (optional) Schedule start date 
+      expiration_time = "2025-02-29T18:00:00Z" # (optional) Schedule end date 
+      vm_start        = "0 9 * * *"            # Start at 8:00 AM daily
+      vm_stop         = "0 17 * * *"           # Stop at 6:00 PM daily
      }
     }
     }
