@@ -33,17 +33,17 @@ locals {
       create_compute_sa = true
       boot_disk = {
         initialize_params = {
-          source_image_project = "cloudlake-qa-1"
-          source_image         = "base-image"
+          source_image_project = "nbcde-009-snapshot-08443"
+          source_image         = "rhel9-soe-dev-2024-1122-1646-v0-cpu"
           size                 = 40
           type                 = "pd-balanced"
         }
       }
       attached_disks = [
-        {  name        = "default-disk"
+        {  name        = "disk-1"
            size        = "20"
         },
-        {  name        = "default-disk-2"
+        {  name        = "disk-2"
            size        = "30"
         }]
     reserve_static_ip = true
